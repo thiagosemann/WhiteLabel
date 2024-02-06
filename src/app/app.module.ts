@@ -21,7 +21,6 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 
 import { ProfileComponent } from './content/profile/profile.component';
 import { RegisterComponent } from './register/register.component';
-import { ListaVagasComponent } from './content/lista-vagas/lista-vagas.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { ListaVagasComponent } from './content/lista-vagas/lista-vagas.component
     ForgotPasswordComponent,
     ProfileComponent,
     RegisterComponent,
-    ListaVagasComponent,
     OrdenarPorPrecoPipe
   ],
   imports: [
