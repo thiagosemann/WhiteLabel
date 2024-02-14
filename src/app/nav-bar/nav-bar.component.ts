@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../../shared/service/authentication';
+import { AuthenticationService } from '../shared/service/authentication';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
@@ -42,7 +42,7 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['/admin/buildings']);
   }
   usuarios(): void {
-    this.router.navigate(['/admin/userControl']);
+    this.router.navigate(['/users']);
   }
   maquinas(): void {
     this.router.navigate(['/admin/machinesControl']);

@@ -16,11 +16,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { ContentComponent } from './content/content.component';
-import { NavBarComponent } from './content/nav-bar/nav-bar.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
-import { ProfileComponent } from './content/profile/profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
+import { UsersControlComponent } from './users-control/users-control.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RegisterComponent } from './register/register.component';
     ForgotPasswordComponent,
     ProfileComponent,
     RegisterComponent,
-    OrdenarPorPrecoPipe
+    OrdenarPorPrecoPipe,
+    UsersControlComponent
   ],
   imports: [
     BrowserModule,

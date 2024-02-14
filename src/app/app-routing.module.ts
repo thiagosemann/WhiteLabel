@@ -7,8 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { ContentComponent } from './content/content.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { ProfileComponent } from './content/profile/profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
+import { UsersControlComponent } from './users-control/users-control.component';
 
 
 const routes: Routes = [
@@ -17,8 +18,9 @@ const routes: Routes = [
   { path: 'landing', component: LandingComponent, canActivate: [AuthGuardService] },
   { path: 'content/:id', component: ContentComponent, canActivate: [AuthGuardService] },
   { path: 'register', component: RegisterComponent },
-
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },
+  { path: 'users', component: UsersControlComponent, canActivate: [AuthGuardService] },
+
   { path: '', redirectTo: '/content', pathMatch: 'full' }, // redireciona para '/home' quando o caminho é vazio
   { path: '**', component: ContentComponent, canActivate: [AuthGuardService] }, // rota de fallback quando nenhuma outra corresponder
 
